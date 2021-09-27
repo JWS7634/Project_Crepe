@@ -1,0 +1,16 @@
+PROJECT(CppGame)
+
+SET (OUTPUT_ELF "${CMAKE_PROJECT_NAME}.exe")
+
+SET (CMAKE_C_COMPILER "g++")
+
+INCLUDE_DIRECTORIES (./include ./src)
+
+ADD_COMPILE_OPTIONS ( -g -Wall )
+SET (CMAKE_EXE_LINKER_FLAGS "-static -Wl,--gc-sections")
+
+ADD_EXECUTABLE(OUTPUT_ELF
+    ./main.cpp
+    ./include/CrepeCore.cpp
+        ./src/Example.cpp
+)
