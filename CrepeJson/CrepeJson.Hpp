@@ -1,6 +1,10 @@
 #ifndef CREPEJSON_HPP_
 #define CREPEJSON_HPP_
 
+#include <string>
+
+using namespace std;
+
 class CrepeJson
 {
 	public:
