@@ -65,6 +65,7 @@ int CrepeJson::JsonDelete(string Ckey)
 }
 const char* CrepeJson::JsonExport()
 {
+	jsonCache.clear();
 	if(!(DataCount > 0))
 		return 0;
 	jsonCache += "{\n";
