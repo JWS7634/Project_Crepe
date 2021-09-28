@@ -1,3 +1,6 @@
+#ifndef CREPEJSON_HPP_
+#define CREPEJSON_HPP_
+
 class CrepeJson
 {
 	public:
@@ -12,3 +15,5 @@ class CrepeJson
 		string** Key;
 		string** Value;
 };
+
+#endif
